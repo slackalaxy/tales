@@ -1,0 +1,26 @@
+Xfce 4.12 SlackBuilds tested on Slackware 15.0 beta.
+
+NOTE! I am testing these still! Use at your own risk!
+
+Reasoning:
+I want to keep using a GTK2-based desktop environment on Slackware 15,
+therefore I decided to stay with Xfce 4.12. The scripts here follow the
+SBo style, but I used the Xfce SlackBuilds from Slackware 14.2 and SBo,
+as a starting point. There are a few version differences, whenever a
+minor update was available, as well as, several new patches.
+
+Folder contents:
+xfce/		The core components of the Xfce desktop.
+plugins/	Plugins for thunar and the panel.
+apps/		Additional applications that complement Xfce.
+borrowed/	Dependencies that are available at SBo. Install them
+		from there to avoid "overlapping" packages.
+art/		The old Xfwm themes and Xfce GTK2 engines and the GNOME
+		icon theme (Tango still uses it as a fallback).
+
+Simple dependencies information is provided in the *.info files, however
+there is a build queue (tales.sqf) that can be loaded by sbopkg.
+
+Packages are built in /tmp/SBo, however, they are tagged as "_tales".
+
+Of course, you should not install anything from the "XFCE" series.
