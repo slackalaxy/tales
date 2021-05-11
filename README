@@ -1,6 +1,7 @@
 Xfce 4.12 SlackBuilds tested on Slackware 15.0 beta.
 
-NOTE! I am testing these still! Use at your own risk!
+NOTE! Everything seems to be working fine in a VM, but I still need to
+test these on a 'real' installation.
 
 Reasoning:
 I want to keep using a GTK2-based desktop environment on Slackware 15,
@@ -23,4 +24,5 @@ there is a build queue (tales.sqf) that can be loaded by sbopkg.
 
 Packages are built in /tmp/SBo, however, they are tagged as "_tales".
 
-Of course, you should not install anything from the "XFCE" series.
+Of course, you should not install anything from the "XFCE" series of the
+stock Slackware install.
