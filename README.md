@@ -9,7 +9,7 @@ I want to keep using a GTK2-based desktop environment on Slackware 15, therefore
  - **xfce/** The core components of the Xfce desktop
  - **apps-and-plugins/** Additional applications and plugins that complement Xfce
  - **borrowed/** Dependencies that are available at SBo. Install them from there if you want to avoid "overlapping" packages.
- - **legacy/** Old themes and programs at their last GTK2 versions. Anything with a "-gtk2" suffix will conflict with its package from SBo.
+ - **legacy/** Old themes and programs at their last GTK2 versions. Anything with a **-gtk2** suffix will conflict with its package from SBo.
 
 Simple dependencies information is provided in the ***.info** files, however there is a build queue (**tales.sqf)** that can be loaded by sbopkg ([https://sbopkg.org/](https://sbopkg.org/)).
 
