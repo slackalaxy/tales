@@ -1,6 +1,6 @@
 ## Xfce 4.12 SlackBuilds for Slackware 15.0 beta.
 
-*NOTE! Everything seems to be working fine in a VM, but I still need to test these on a 'real' installation.*
+*NOTE! Everything seems to work fine in a VM with Slackware -current (09 May 2021), but I still need to test these on a 'real' installation.*
 
 **Reasoning:**
 I want to keep using a GTK2-based desktop environment on Slackware 15, therefore I decided to stay with Xfce 4.12. The scripts here follow the SBo style, but I used the Xfce SlackBuilds from Slackware 14.2 and SBo, as a starting point. There are a few version differences, whenever a minor update was available, as well as, several new patches.
