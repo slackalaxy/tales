@@ -30,12 +30,16 @@ xfce4-xkb-plugin 0.7.1
 
 apps/
 orage 4.12.1
+xfce4-mixer 4.10.0
 xfce4-notifyd 0.2.4
 xfce4-screenshooter 1.8.2
 xfce4-taskmanager 1.2.3
 xfce4-terminal 0.6.3
 
 borrowed/
+gstreamer0 0.10.36
+gst0-plugins-base 0.10.36
+gst0-plugins-good 0.10.31
 libunique 1.1.6
 vte2 0.28.2
 
