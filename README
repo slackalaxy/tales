@@ -11,13 +11,19 @@ as a starting point. There are a few version differences, whenever a
 minor update was available, as well as, several new patches.
 
 Folder contents:
-xfce/		The core components of the Xfce desktop
-apps-plugins/	Additional applications and plugins that complement Xfce
-borrowed/	Dependencies that are available at SBo. Install them
-		from there if you want to avoid "overlapping" packages.
-legacy/		Old themes and programs at their last GTK2 versions.
-		Anything with a "-gtk2" suffix will conflict with its
-		package from SBo.
+xfce/
+The core components of the Xfce desktop
+
+apps-and-plugins/
+Additional applications and plugins that complement Xfce
+
+borrowed/
+Dependencies that are available at SBo. Install them from there if you
+want to avoid "overlapping" packages.
+
+legacy/
+Old themes and programs at their last GTK2 versions. Anything with a
+"-gtk2" suffix will conflict with its package from SBo.
 
 Simple dependencies information is provided in the *.info files, however
 there is a build queue (tales.sqf) that can be loaded by sbopkg.
