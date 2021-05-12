@@ -32,6 +32,10 @@ thunar-archive-plugin
 xfce4-whiskermenu-plugin
 libunique
 xfce4-notes-plugin
+gstreamer0
+gst0-plugins-base
+gst0-plugins-good
+xfce4-mixer
 xfwm4-themes
 gtk-xfce-engine
 gnome-icon-theme
