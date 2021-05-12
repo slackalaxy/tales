@@ -1,4 +1,4 @@
-## Xfce 4.12 SlackBuilds tested on Slackware 15.0 beta.
+## Xfce 4.12 SlackBuilds for Slackware 15.0 beta.
 
 *NOTE! Everything seems to be working fine in a VM, but I still need to test these on a 'real' installation.*
 
