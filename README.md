@@ -16,3 +16,5 @@ Simple dependencies information is provided in the ***.info** files, however the
 Packages are built in **/tmp/SBo**, but are tagged as **_tales**.
 
 **Of course, you should not install anything from the "XFCE" series of the stock Slackware install.**
+
+For questions and suggestions: **slackalaxy(ат)gmail.com**
