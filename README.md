@@ -12,13 +12,17 @@ I want to keep using a GTK2-based desktop environment on Slackware 15, therefore
  - **legacy/** Programs at their last GTK2 versions or ones explicitly compiled to use GTK2. Anything with a `-gtk2` suffix in the name will conflict with its corresponding package from SBo.
  - **xfce/** The core components of the Xfce desktop.
  
+What you need as a minimum is **xfce/** and any goodies from **apps-and-plugins/**. Simple dependencies information is provided in the `*.info` files. 
+
 **Installation:**
-What you need as a minimum is **xfce/** and any goodies from **apps-and-plugins/**. Simple dependencies information is provided in the `*.info` files. To automate the install, the excellent `sbopkg` tool ([https://sbopkg.org/](https://sbopkg.org/)) can be used with several build queues:
+To automate the install, the excellent `sbopkg` tool ([https://sbopkg.org/](https://sbopkg.org/)) can be used. Add "tales" as a new repo, by copying `65-tales.repo` to `/etc/sbopkg/repos.d`, then sync. There is a build queue (`tales.sqf`) that will install everything or there are individual build queues for each category (load them in that order):
  - `xfce.sqf`
  - `apps-and-plugins.sqf`
  - `art.sqf`
  - `legacy.sqf`
 
-Place the 4 folders with SlackBuilds in `/var/lib/sbopkg/local` and the `*.sqf` files in `/var/lib/sbopkg/queues`. To build everything, load the queues in the order above or just use the `tales.sqf`, which combines them all. Packages are built in `/tmp/SBo`, but are tagged as `_tales`. By default, `sbopkg` will change the tag to `_SBo`, so please read this [comment](https://www.linuxquestions.org/questions/slackware-14/xfce-4-12-on-slackware-15-0-beta-gtk2-desktop-4175695004/#post6250087) by *bassmadrigal* about how to address this.
+Place the `*.sqf` files in `/var/lib/sbopkg/queues`. Packages are built in `/tmp/SBo`, but are tagged as `_tales`.
+
+Alternatively, you can place the 5 folders in `/var/lib/sbopkg/local`, instead. By default, `sbopkg` will change the tag to `_SBo`, so please read this [comment](https://www.linuxquestions.org/questions/slackware-14/xfce-4-12-on-slackware-15-0-beta-gtk2-desktop-4175695004/#post6250087). I thank *bassmadrigal* for the clarifications and explanation about adding a new repo to `sbopkg`.
 
 For questions and suggestions: **slackalaxy (ат) gmail.com**
