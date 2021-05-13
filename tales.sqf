@@ -20,7 +20,6 @@ xfce4-screenshooter
 orage
 vte2
 xfce4-terminal
-xfce4-pulseaudio-plugin
 xfce4-clipman-plugin
 xfce4-systemload-plugin
 xfce4-weather-plugin
