@@ -13,12 +13,12 @@ I want to keep using a GTK2-based desktop environment on Slackware 15, therefore
  - **xfce/** The core components of the Xfce desktop.
  
 **Installation:**
-What you absolutely need are the components of **xfce/** and any goodies from **apps-and-plugins/**. Simple dependencies information is provided in the `*.info` files, however, I prepared several build queues that can be loaded by `sbopkg` ([https://sbopkg.org/](https://sbopkg.org/)):
+What you need as a minimum is **xfce/** and any goodies from **apps-and-plugins/**. Simple dependencies information is provided in the `*.info` files. To automate the install, the excellent `sbopkg` tool ([https://sbopkg.org/](https://sbopkg.org/)) can be used with several build queues:
  - `xfce.sqf`
  - `apps-and-plugins.sqf`
  - `art.sqf`
  - `legacy.sqf`
 
-If you want to build everything, load them in that order or just use the `tales.sqf`, which combines them all. Packages are built in `/tmp/SBo`, but are tagged as `_tales`. By default, `sbopkg` will change the tag to `_SBo`, so please read this [comment](https://www.linuxquestions.org/questions/slackware-14/xfce-4-12-on-slackware-15-0-beta-gtk2-desktop-4175695004/#post6250087) by *bassmadrigal* about how to address this.
+Place the 4 folders with SlackBuilds in `/var/lib/sbopkg/local` and the `*.sqf` files in `/var/lib/sbopkg/queues`. To build everything, load the queues in the order above or just use the `tales.sqf`, which combines them all. Packages are built in `/tmp/SBo`, but are tagged as `_tales`. By default, `sbopkg` will change the tag to `_SBo`, so please read this [comment](https://www.linuxquestions.org/questions/slackware-14/xfce-4-12-on-slackware-15-0-beta-gtk2-desktop-4175695004/#post6250087) by *bassmadrigal* about how to address this.
 
 For questions and suggestions: **slackalaxy (ат) gmail.com**
