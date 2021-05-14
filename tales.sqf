@@ -38,6 +38,7 @@ gstreamer0
 gst0-plugins-base
 gst0-plugins-good
 xfce4-mixer
+xfce4-volumed-pulse
 gnome-icon-theme
 gtk-xfce-engine
 xfwm4-themes
