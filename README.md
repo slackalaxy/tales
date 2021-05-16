@@ -2,10 +2,10 @@
 
 *NOTE! Everything seems to work fine in a VM with Slackware -current (09 May 2021), but I still need to test these on a 'real' installation.*
 
-**Reasoning:**
+**Reasoning:**  
 I want to keep using a GTK2-based desktop environment on Slackware 15, therefore I decided to stay with Xfce 4.12. The scripts here follow the SlackBuilds.org (SBo) style, but I used the Xfce SlackBuilds from Slackware 14.2 as a starting point and reference. Also, I added some more plugins, the scripts of which were adapted from the ones at SBo. There are a few version differences, whenever a minor update was available, as well as, several new patches. **If you decide to try this, you should not install anything from the "XFCE" series of the stock Slackware install, and be careful if you install Xfce-related stuff from SBo, as it most likely is already here.**
 
-**Folders:**
+**Folders:**  
  - **apps-and-plugins/** Applications and plugins that complement Xfce.
  - **art/** Old icons, GTK2 and Xfwm themes.
  - **borrowed/** Dependencies that are available at SBo. I advise you to just install them from there, to avoid "overlapping" packages. I have them here for completeness sake.
@@ -14,7 +14,7 @@ I want to keep using a GTK2-based desktop environment on Slackware 15, therefore
  
 What you need as a minimum is **xfce/** and any goodies from **apps-and-plugins/**. Simple dependencies information is provided in the `*.info` files. 
 
-**Installation:**
+**Installation:**  
 To automate the install, the excellent `sbopkg` tool ([https://sbopkg.org/](https://sbopkg.org/)) can be used. Add "tales" as a new repo, by copying `65-tales.repo` to `/etc/sbopkg/repos.d`, then sync. There is a build queue (`tales.sqf`) that will install everything or there are individual build queues for each category (load them in that order):
  - `xfce.sqf`
  - `apps-and-plugins.sqf`
