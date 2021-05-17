@@ -25,7 +25,7 @@
 
 PRGNAM=thunar
 SRCNAM=Thunar
-VERSION=${VERSION:-1.6.18}
+VERSION=${VERSION:-1.6.10}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_tales}
 
@@ -71,8 +71,8 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-# This is an updated patch for thunar 1.6.18
-patch -p1 -i $CWD/01-Deactivate-SEND_MOVED-code-paths.patch
+# This is the patch from Slackware 14.2
+zcat $CWD/0001-Deactivate-SEND_MOVED-code-paths.patch.gz | patch -p1 --verbose || exit 1
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
