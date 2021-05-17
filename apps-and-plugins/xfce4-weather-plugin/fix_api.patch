@@ -1,17 +1,6 @@
 diff -pruN old/panel-plugin/weather.c new/panel-plugin/weather.c
 --- old/panel-plugin/weather.c	2019-03-24 14:08:29.000000000 +0200
 +++ new/panel-plugin/weather.c	2021-05-11 13:44:31.759482356 +0300
-@@ -635,8 +635,8 @@ update_handler(plugin_data *data)
-         /* build url */
-         url = g_strdup_printf("https://api.met.no/weatherapi"
-                               "/sunrise/2.0/?lat=%s&lon=%s&"
--                              "date=%04d-%02d-%02d&"
--                              "offset=%s&days=%u",
-+                              "date=%04d-%02d-%02d;"
-+                              "offset=00:00",
-                               data->lat, data->lon,
-                               now_tm.tm_year + 1900,
-                               now_tm.tm_mon + 1,
 @@ -660,9 +660,8 @@ update_handler(plugin_data *data)
  
          /* build url */
