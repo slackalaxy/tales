@@ -25,7 +25,7 @@
 
 PRGNAM=xfce4-panel
 VERSION=${VERSION:-4.12.2}
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_tales}
 
 if [ -z "$ARCH" ]; then
@@ -69,6 +69,17 @@ find -L . \
   -o -perm 511 \) -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+
+# This builds the applicationsmenu plugin for the panel from Xfce 4.10.
+# The one from 4.12 does not obey custom sizes for the icons in the menu
+# set in ~/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml by the
+# option "panel-applications-menu=22", for example like this:
+# https://slackalaxy.com/2012/11/11/bigger-menu-icons-in-xfce/
+# There's this discussion, where trash4inbox just made a patch:
+# https://bugzilla.xfce.org/show_bug.cgi?id=11757#c10
+# I decided to give it a try. It works, but I do not know if this is the
+# right way to do things. Therefore, it's commented out.
+# patch -p1 -i $CWD/applicationsmenu.patch
 
 # Blink to notify 4 times (4 on, 4 off), not G_MAXUINT times:
 sed -i "s:#define MAX_BLINKING_COUNT (G_MAXUINT):#define MAX_BLINKING_COUNT (8):" libxfce4panel/xfce-arrow-button.c
