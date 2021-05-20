@@ -6,6 +6,7 @@ gtksourceview
 mousepad-gtk2
 goffice0.8
 gnumeric-gtk2
+brasero-gtk2
 python-webencodings
 html5lib
 setuptools-scm
