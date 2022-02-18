@@ -32,3 +32,6 @@ Here's a link to the post in [my humble blog](https://slackalaxy.com/2021/06/30/
 Screenshot? :)
 
 ![Screenshot](https://slackalaxy.files.wordpress.com/2021/06/scr.png?raw=true "Title")
+
+
+Привет! Спасибо за ссылку с вашего сайта, русские посетители. Я понимаю русский язык, но, к сожалению, уже не могу хорошо говорить или писать на нем. Иначе я бы перевел инструкцию. Извинения.
