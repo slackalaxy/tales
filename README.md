@@ -27,4 +27,8 @@ Alternatively, you can place the 5 folders in `/var/lib/sbopkg/local`, instead. 
 
 For questions and suggestions: **slackalaxy (ат) gmail.com**
 
+Here's a link to the post in [my humble blog](https://slackalaxy.com/2021/06/30/gtk2-only-xfce-4-12-desktop/).
+
+Screenshot? :)
+
 ![Screenshot](https://slackalaxy.files.wordpress.com/2021/06/scr.png?raw=true "Title")
