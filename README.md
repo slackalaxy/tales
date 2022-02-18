@@ -26,3 +26,5 @@ Place the `*.sqf` files in `/var/lib/sbopkg/queues`. Packages are built in `/tmp
 Alternatively, you can place the 5 folders in `/var/lib/sbopkg/local`, instead. By default, `sbopkg` will change the tag to `_SBo`, so please read this [comment](https://www.linuxquestions.org/questions/slackware-14/xfce-4-12-on-slackware-15-0-beta-gtk2-desktop-4175695004/#post6250087). I thank *bassmadrigal* for the clarifications and explanation about adding a new repo to `sbopkg`.
 
 For questions and suggestions: **slackalaxy (ат) gmail.com**
+
+![Screenshot](https://slackalaxy.files.wordpress.com/2021/06/scr.png?raw=true "Title")
